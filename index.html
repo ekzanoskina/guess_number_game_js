@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="reset-btn btn">
+                Снова!
+            </button>
+            <p class="hint">
+                Число от 1 до 20 <br> включительно
+            </p>
+        </div>
+        <div class="title">Угадай число</div>
+        <div class="secret-number">?</div>
+        <div class="input-result-container">
+            <div class="input-container">
+                <p class="message">
+                    Начните угадывать
+                </p>
+                <input type="number" class="guess-input">
+                <button class="guess-btn btn">
+                    Проверить
+                </button>
+            </div>
+            <div class="result-container">
+                <p class="attempts">
+                    Количество попыток: <span class="attempts-count">20</span>
+                </p>
+                <p class="record">
+                    Рекорд: <span class="record-score">20</span>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

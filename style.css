@@ -1,0 +1,101 @@
+body {
+    background: radial-gradient(
+        circle,
+        rgba(35, 34, 41, 1) 51%,
+        rgba(56, 59, 60, 1) 100%
+      );
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+.btn {
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.secret-number {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid greenyellow;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.input-result-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guess-input {
+    height: 60px;
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    
+    
+}
+.attempts::before {
+    content: "";
+    background-image:url(/icons/attempts.svg);
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+  
+    /*size of your image*/
+    height: 25px;
+    width:25px;
+}
+
+.record::before {
+    content: "";
+    background-image:url(/icons/record.svg);
+    background-size: 100% 100%;
+    display: inline-block;
+    vertical-align: middle;
+    /*size of your image*/
+    height: 25px;
+    width:25px;
+}
